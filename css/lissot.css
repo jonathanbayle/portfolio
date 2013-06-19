@@ -1,0 +1,70 @@
+/* Backgrounds */
+
+.bg1 {
+  background-color: #15B9D6;
+}
+.bg2 {
+  background-color: #1FBBA6;
+}
+.bg3 {
+  background-color: #979FAB;
+}
+.bg4 {
+  background-color: #323A45;
+}
+.bg5 {
+  background-color: #F27934;
+}
+.bg6 {
+  background-color: #ECE9E1;
+}
+.bg7 {
+  background-color: #ACD2D9;
+}
+
+/* Texts */
+
+.demo-panel-title {
+  color: white;
+}
+
+.row .span9 {
+  text-align: center;
+  margin-left: 0;
+}
+
+/* Others */
+
+.fui-twitter {
+  float: right;
+}
+.nb_photos {
+  visibility: hidden;
+}
+.loadmore {
+  text-align: center;
+  padding-top: 30px;
+}
+.alert {
+  position: fixed;
+  top: 40%;
+  text-align: center;
+}
+.alert span {
+	font-weight: bold;
+}
+#myModalLabel {
+	color: #1abc9c;
+}
+#myModal, .modal-footer {
+	text-align: center;
+}
+#showRightPush {
+	position: absolute;
+	top: 7px;
+	right: 15px;
+}
+.cbp-spmenu-vertical a.disabled {
+	opacity: 0.3;
+	cursor: default;
+}
