@@ -239,14 +239,11 @@
 		
 		//Modal exif infos
 		$(document).on("click", ".img", function() {
-			var hook=$(this);
-			$(this).exifLoad(function(){
-				document.getElementById('Model').innerHTML = hook.exif("Model");
-				document.getElementById('DateTimeOriginal').innerHTML = hook.exif("DateTimeOriginal");
-				document.getElementById('ExposureTime').innerHTML = "1/"+(1/hook.exif("ExposureTime"))+"s";
-				document.getElementById('FNumber').innerHTML = "f/"+hook.exif("FNumber");
-				document.getElementById('ISOSpeedRatings').innerHTML = "ISO"+hook.exif("ISOSpeedRatings");
-			});
+			document.getElementById('Model').innerHTML = $(this).exif("Model");
+			document.getElementById('DateTimeOriginal').innerHTML = $(this).exif("DateTimeOriginal");
+			document.getElementById('ExposureTime').innerHTML = "1/"+(1/$(this).exif("ExposureTime"))+"s";
+			document.getElementById('FNumber').innerHTML = "f/"+$(this).exif("FNumber");
+			document.getElementById('ISOSpeedRatings').innerHTML = "ISO"+$(this).exif("ISOSpeedRatings");
 		});
 	</script>
   </body>
