@@ -10,7 +10,7 @@
   $data = array('ID_BG' => '3', 'ID_PHOTO' => '6', 'APERTURE' => '1.8');
   
 ?>
-	<div class="bottom-menu bottom-menu-large bg<?php echo $data['ID_BG']; ?>" id="<?php echo $data['ID_PHOTO']; ?>">
+    <div class="bottom-menu bottom-menu-large bg<?php echo $data['ID_BG']; ?>" id="<?php echo $data['ID_PHOTO']; ?>">
       <div class="container">
         <div class="row">
           <div class="span2 brand">
@@ -19,13 +19,16 @@
 
           <div class="span9">
 	        <a href="#myModal" role="button" data-toggle="modal">
-          	  <img src="images/photos/<?php echo $data['ID_PHOTO']; ?>.jpg" alt="photo<?php echo $data['ID_PHOTO']; ?>" class="img" exif="true"/>
+          	  <img 	src="images/photos/<?php echo $data['ID_PHOTO']; ?>.jpg"
+          	  	alt="photo<?php echo $data['ID_PHOTO']; ?>"
+          	  	class="img"
+          	  	exif="true"
+          	  	onload="$(this).exifLoad();" />
           	</a>
           </div>
         </div>
       </div>
     </div>
-    <script>$(".img").exifLoad();</script>
 <?php
   // To decomment if used with sql query
   // }
